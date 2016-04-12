@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98357C7D1CBD31C800EE5DEC /* aa.m in Sources */ = {isa = PBXBuildFile; fileRef = 98357C7C1CBD31C800EE5DEC /* aa.m */; settings = {ASSET_TAGS = (); }; };
 		987AB9A11CBD292800FA87AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AB9A01CBD292800FA87AF /* main.m */; };
 		987AB9A41CBD292800FA87AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AB9A31CBD292800FA87AF /* AppDelegate.m */; };
 		987AB9A71CBD292800FA87AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AB9A61CBD292800FA87AF /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98357C7B1CBD31C800EE5DEC /* aa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aa.h; sourceTree = "<group>"; };
+		98357C7C1CBD31C800EE5DEC /* aa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aa.m; sourceTree = "<group>"; };
 		987AB99C1CBD292800FA87AF /* 网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		987AB9A01CBD292800FA87AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		987AB9A21CBD292800FA87AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				987AB9A31CBD292800FA87AF /* AppDelegate.m */,
 				987AB9A51CBD292800FA87AF /* ViewController.h */,
 				987AB9A61CBD292800FA87AF /* ViewController.m */,
+				98357C7B1CBD31C800EE5DEC /* aa.h */,
+				98357C7C1CBD31C800EE5DEC /* aa.m */,
 				987AB9A81CBD292800FA87AF /* Main.storyboard */,
 				987AB9AB1CBD292800FA87AF /* Assets.xcassets */,
 				987AB9AD1CBD292800FA87AF /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				987AB9A71CBD292800FA87AF /* ViewController.m in Sources */,
+				98357C7D1CBD31C800EE5DEC /* aa.m in Sources */,
 				987AB9A41CBD292800FA87AF /* AppDelegate.m in Sources */,
 				987AB9A11CBD292800FA87AF /* main.m in Sources */,
 			);
