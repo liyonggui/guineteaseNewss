@@ -8,15 +8,34 @@
 
 #import "AppDelegate.h"
 
+#import "YGNewsViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
 
+
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"News" bundle:nil];
+//    
+//    UIViewController *vc = sb.instantiateInitialViewController;
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LoopView" bundle:nil];
+    
+    UIViewController *vc = sb.instantiateInitialViewController;
+    
+    self.window.rootViewController = vc;
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
