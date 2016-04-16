@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YGLouupViewController : UIViewController
+@interface YGHeadLineViewController : UIViewController
 
 @end

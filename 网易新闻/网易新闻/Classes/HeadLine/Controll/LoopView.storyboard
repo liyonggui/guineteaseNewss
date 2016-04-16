@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Louup View Controller-->
+        <!--Head Line View Controller-->
         <scene sceneID="Dzm-fR-7t4">
             <objects>
-                <viewController id="zd0-Bs-2em" customClass="YGLouupViewController" sceneMemberID="viewController">
+                <viewController id="zd0-Bs-2em" customClass="YGHeadLineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YbD-Rm-HiC"/>
                         <viewControllerLayoutGuide type="bottom" id="ett-u9-M1A"/>

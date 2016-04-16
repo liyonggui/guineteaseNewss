@@ -10,6 +10,6 @@
 
 @interface YGLoopView : UIView
 
-
+- (instancetype)initWithUrls:(NSArray <NSString *>*)urls title:(NSArray <NSString *>*)titles didSelected:(void (^)())selected;
 
 @end
