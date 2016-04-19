@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "YGNewsViewController.h"
+#import "YGHomeViewController.h"
 
 
 @interface AppDelegate ()
@@ -23,13 +24,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"News" bundle:nil];
-//    
-//    UIViewController *vc = sb.instantiateInitialViewController;
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LoopView" bundle:nil];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
     
     UIViewController *vc = sb.instantiateInitialViewController;
+    
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"LoopView" bundle:nil];
+//    
+//    UIViewController *vc = sb.instantiateInitialViewController;
     
     self.window.rootViewController = vc;
     

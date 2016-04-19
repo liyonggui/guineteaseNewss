@@ -22,7 +22,8 @@
         
         instance = [[self alloc] initWithBaseURL:basicUrl];
         
-        
+        instance.responseSerializer.acceptableContentTypes =[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
+
     });
     return instance;
 }

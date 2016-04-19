@@ -10,6 +10,7 @@
 
 #import "YGFlowLayout.h"
 #import "YGLoopViewCell.h"
+#import "YGWeakTimer.h"
 
 @interface YGLoopView () <UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -86,7 +87,7 @@
 {
     if (self.timer) return;
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(update) userInfo:nil repeats:YES];
+    self.timer = [YGWeakTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(update) userInfo:nil repeats:YES];
     // 添加到运行环
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
