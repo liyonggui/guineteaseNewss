@@ -19,6 +19,7 @@
         
         // http://c.m.163.com/nc/ad/
         NSURL *basicUrl = [NSURL URLWithString:@"http://c.m.163.com/nc/ad/"];
+//        NSURL *basicUrl = [NSURL URLWithString:@"http://c.m.163.com/nc/"];
         
         instance = [[self alloc] initWithBaseURL:basicUrl];
         

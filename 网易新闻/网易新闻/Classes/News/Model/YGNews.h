@@ -22,6 +22,11 @@
 @property (nonatomic, strong) NSArray *imgextra;
 ///  大图显示标志
 @property (nonatomic, assign) BOOL imgType;
+///  文档id
+@property (nonatomic, copy) NSString *docid;
+///  新闻详细对应的url
+@property (nonatomic, copy) NSString *detailURLStirng;
+
 
 + (instancetype)newsWithDict:(NSDictionary *)dict;
 

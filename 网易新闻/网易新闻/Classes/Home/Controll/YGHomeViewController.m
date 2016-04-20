@@ -119,7 +119,7 @@
     // 默认头条选中
     YGChannelLabel *label = self.scrollView.subviews[self.currentIndex];
     label.scale = 1.0;
-    NSLog(@"%zd",self.scrollView.subviews.count);
+//    NSLog(@"%zd",self.scrollView.subviews.count);
 }
 
 - (void)viewDidLayoutSubviews
@@ -162,6 +162,13 @@
     YGNewsViewController *newsVC = [self newsVC:channel];
     // 控制器赋值给cell
     cell.newsVC = newsVC;
+    
+    if (![self.childViewControllers containsObject:newsVC])
+    {
+        [self addChildViewController:newsVC];
+    }
+    
+    
     return cell;
 }
 

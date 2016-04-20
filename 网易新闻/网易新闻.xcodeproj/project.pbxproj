@@ -26,6 +26,8 @@
 		987AB9A41CBD292800FA87AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 987AB9A31CBD292800FA87AF /* AppDelegate.m */; };
 		987AB9AC1CBD292800FA87AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987AB9AB1CBD292800FA87AF /* Assets.xcassets */; };
 		987AB9AF1CBD292800FA87AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987AB9AD1CBD292800FA87AF /* LaunchScreen.storyboard */; };
+		98D602E41CC62A3F004E77B9 /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 98D602E31CC62A3F004E77B9 /* detail.html */; settings = {ASSET_TAGS = (); }; };
+		98D602E71CC62B85004E77B9 /* YGNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D602E61CC62B85004E77B9 /* YGNewsDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		98F0A26E1CC1E984008AE7E7 /* YGWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F0A26D1CC1E984008AE7E7 /* YGWeakTimer.m */; settings = {ASSET_TAGS = (); }; };
 		98F0A2711CC20FB6008AE7E7 /* YGNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F0A2701CC20FB6008AE7E7 /* YGNews.m */; settings = {ASSET_TAGS = (); }; };
 		98F0A2741CC21D1A008AE7E7 /* YGNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F0A2731CC21D1A008AE7E7 /* YGNewsCell.m */; settings = {ASSET_TAGS = (); }; };
@@ -69,6 +71,9 @@
 		987AB9AB1CBD292800FA87AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		987AB9AE1CBD292800FA87AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		987AB9B01CBD292800FA87AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D602E31CC62A3F004E77B9 /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
+		98D602E51CC62B85004E77B9 /* YGNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNewsDetailViewController.h; sourceTree = "<group>"; };
+		98D602E61CC62B85004E77B9 /* YGNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGNewsDetailViewController.m; sourceTree = "<group>"; };
 		98F0A26C1CC1E984008AE7E7 /* YGWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGWeakTimer.h; sourceTree = "<group>"; };
 		98F0A26D1CC1E984008AE7E7 /* YGWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGWeakTimer.m; sourceTree = "<group>"; };
 		98F0A26F1CC20FB6008AE7E7 /* YGNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGNews.h; sourceTree = "<group>"; };
@@ -190,6 +195,8 @@
 				983FB4361CBE7CE500EEE75A /* News.storyboard */,
 				983FB4371CBE7CE500EEE75A /* YGNewsViewController.h */,
 				983FB4381CBE7CE500EEE75A /* YGNewsViewController.m */,
+				98D602E51CC62B85004E77B9 /* YGNewsDetailViewController.h */,
+				98D602E61CC62B85004E77B9 /* YGNewsDetailViewController.m */,
 			);
 			path = Controll;
 			sourceTree = "<group>";
@@ -215,6 +222,7 @@
 		983FB43B1CBE7CE500EEE75A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				985158AE1CBFC61C0092BE84 /* Log-NSObject分类 */,
 				983FB43E1CBE7F8200EEE75A /* YGNetworkTools.h */,
 				983FB43F1CBE7F8200EEE75A /* YGNetworkTools.m */,
 			);
@@ -262,7 +270,8 @@
 				985158AF1CBFC61C0092BE84 /* NSObject+Log.h */,
 				985158B01CBFC61C0092BE84 /* NSObject+Log.m */,
 			);
-			path = "Log-NSObject分类";
+			name = "Log-NSObject分类";
+			path = "../../Log-NSObject分类";
 			sourceTree = "<group>";
 		};
 		987AB9931CBD292800FA87AF = {
@@ -286,7 +295,6 @@
 		987AB99E1CBD292800FA87AF /* 网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
-				985158AE1CBFC61C0092BE84 /* Log-NSObject分类 */,
 				987AB9A21CBD292800FA87AF /* AppDelegate.h */,
 				987AB9A31CBD292800FA87AF /* AppDelegate.m */,
 				983FB42B1CBE7CE500EEE75A /* Classes */,
@@ -301,6 +309,7 @@
 		987AB99F1CBD292800FA87AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98D602E31CC62A3F004E77B9 /* detail.html */,
 				98636C261CC34BB900881655 /* topic_news.json */,
 				987AB9A01CBD292800FA87AF /* main.m */,
 			);
@@ -342,6 +351,7 @@
 				TargetAttributes = {
 					987AB99B1CBD292800FA87AF = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = CD9T5EDQQ3;
 					};
 				};
 			};
@@ -371,6 +381,7 @@
 				987AB9AF1CBD292800FA87AF /* LaunchScreen.storyboard in Resources */,
 				983FB43C1CBE7CE500EEE75A /* News.storyboard in Resources */,
 				987AB9AC1CBD292800FA87AF /* Assets.xcassets in Resources */,
+				98D602E41CC62A3F004E77B9 /* detail.html in Resources */,
 				98636C271CC34BB900881655 /* topic_news.json in Resources */,
 				98636C221CC34B0E00881655 /* Home.storyboard in Resources */,
 			);
@@ -445,6 +456,7 @@
 				985158B11CBFC61C0092BE84 /* NSObject+Log.m in Sources */,
 				9810ADAD1CC5DB6E00C301E7 /* YGChannelCell.m in Sources */,
 				985158BB1CBFD16B0092BE84 /* YGHeadLineViewController.m in Sources */,
+				98D602E71CC62B85004E77B9 /* YGNewsDetailViewController.m in Sources */,
 				985158A01CBF9B5D0092BE84 /* YGHeadLine.m in Sources */,
 				98636C201CC34B0200881655 /* YGHomeViewController.m in Sources */,
 				98636C251CC34B6900881655 /* YGChannel.m in Sources */,
@@ -550,10 +562,11 @@
 			baseConfigurationReference = 6A9AAD44955D9CD4CB169707 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.----";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.----gui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -563,10 +576,11 @@
 			baseConfigurationReference = 50B402B96FC5385531D4B87B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.----";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itcast.----gui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

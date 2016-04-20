@@ -21,6 +21,12 @@
     return obj;
 }
 
+- (void)setDocid:(NSString *)docid
+{
+    _docid = docid;
+    _detailURLStirng = [NSString stringWithFormat:@"/nc/article/%@/full.html",docid];
+}
+
 ///  防止报错
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{}
 
